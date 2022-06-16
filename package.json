@@ -1,0 +1,28 @@
+{
+  "name": "tech-challenge",
+  "version": "1.0.0",
+  "description": "Easy tech challenge for Shine Solar",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "scss": "node-sass --watch style/scss style.scss style.css -o style/scss/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShineSolar/tech-challenge.git"
+  },
+  "author": "Matt Pickett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShineSolar/tech-challenge/issues"
+  },
+  "homepage": "https://github.com/ShineSolar/tech-challenge#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "node-sass": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
