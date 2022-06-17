@@ -49,6 +49,8 @@ section {
       div:first-child:nth-last-child(4),
       div:first-child:nth-last-child(4) ~ div {
         width: 25%;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
     }
   }

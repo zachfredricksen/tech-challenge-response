@@ -56,7 +56,9 @@ section {
         color: #2485E1; }
       section ul.user-list li div:first-child:nth-last-child(4),
       section ul.user-list li div:first-child:nth-last-child(4) ~ div {
-        width: 25%; }
+        width: 25%;
+        text-overflow: ellipsis;
+        overflow: hidden; }
 
 #todo-modals div.modal {
   display: none;
