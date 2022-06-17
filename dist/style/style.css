@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif; }
+
+body {
+  background-color: #F5F6F7;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 50px;
+  display: flex; }
+  body section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: #FFFFFF; }
+
+h1.brand-primary {
+  color: #FF6900;
+  width: 100%;
+  font-size: 0.9em;
+  padding-bottom: 1.7em; }
+
+section {
+  padding: 1.75em;
+  box-shadow: 0px 3px 3px #B1BBC2;
+  font-weight: 600;
+  font-size: 0.7em; }
+  section .column-headers {
+    display: flex;
+    width: 100%;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #ECEEEF; }
+    section .column-headers div:first-child:nth-last-child(4),
+    section .column-headers div:first-child:nth-last-child(4) ~ div {
+      width: 25%; }
+  section ul.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    section ul.user-list li {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding: 0.5em 0em;
+      border-radius: 0.25em; }
+      section ul.user-list li:hover {
+        background-color: #ECEEEF; }
+      section ul.user-list li div:first-child {
+        color: #2485E1; }
+      section ul.user-list li div:first-child:nth-last-child(4),
+      section ul.user-list li div:first-child:nth-last-child(4) ~ div {
+        width: 25%; }
+
+#todo-modals div.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4); }
+  #todo-modals div.modal ul {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 2em;
+    border: 1px solid #888;
+    max-height: 25em;
+    min-width: 20em;
+    overflow-y: auto;
+    list-style: none;
+    border-radius: 10px; }
+    #todo-modals div.modal ul li {
+      padding-bottom: 1.5em;
+      font-weight: 600;
+      font-size: 0.7em; }
+
+#todo-modals div.modal.active {
+  display: flex; }
+
+::-webkit-scrollbar {
+  width: 2em; }
+
+::-webkit-scrollbar-thumb {
+  background: #B1BBC2;
+  border-right: 1.5em #FFFFFF solid;
+  background-clip: padding-box; }
+
+::-webkit-scrollbar-track {
+  margin-block: 2em;
+  box-shadow: inset 0 0 5px #ECEEEF;
+  border-right: 1.5em #FFFFFF solid; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #60707d; }

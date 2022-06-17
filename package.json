@@ -5,8 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
-    "scss": "node-sass --watch style/scss style.scss style.css -o style/scss/"
+    "build": "npx tsc",
+    "start": "nodemon dist/app.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/app.js\"",
+    "scss": "node-sass --watch style/scss style.scss style.css -o dist/style/"
   },
   "repository": {
     "type": "git",
@@ -19,10 +21,15 @@
   },
   "homepage": "https://github.com/ShineSolar/tech-challenge#readme",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "node-sass": "^7.0.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.0.0",
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.16",
+    "typescript": "^4.7.3"
   }
 }

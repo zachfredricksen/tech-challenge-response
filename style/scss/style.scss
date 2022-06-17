@@ -1,1 +1,112 @@
 @import 'partials/main';
+
+h1.brand-primary {
+  color: $brand-primary;
+  width: 100%;
+  font-size: 0.9em;
+  padding-bottom: 1.7em;
+}
+
+section {
+  padding: 1.75em;
+  box-shadow: 0px 3px 3px $light-five;
+  font-weight: 600;
+  font-size: 0.7em;
+
+  .column-headers {
+    display: flex;
+    width: 100%;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid $light-two;
+
+    div:first-child:nth-last-child(4),
+    div:first-child:nth-last-child(4) ~ div {
+      width: 25%;
+    }
+  } 
+
+  ul.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding: 0.5em 0em;
+      border-radius: 0.25em;
+
+      &:hover {
+        background-color: $light-two;
+      }
+
+      div:first-child {
+        color: $blue-primary;
+      }
+
+      div:first-child:nth-last-child(4),
+      div:first-child:nth-last-child(4) ~ div {
+        width: 25%;
+      }
+    }
+  }
+}
+
+#todo-modals {
+  div.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+
+    ul {
+      background-color: #fefefe;
+      margin: 5% auto;
+      padding: 2em;
+      border: 1px solid #888;
+      max-height: 25em;
+      min-width: 20em;
+      overflow-y: auto;
+      list-style: none;
+      border-radius: 10px;
+
+      li {
+        padding-bottom: 1.5em;
+        font-weight: 600;
+        font-size: 0.7em;
+      }
+    }
+  }
+
+  div.modal.active {
+    display: flex;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $light-five;
+  border-right: 1.5em $white solid;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+  margin-block: 2em;
+  box-shadow: inset 0 0 5px $light-two; 
+  border-right: 1.5em $white solid;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:$dark-six; 
+}
