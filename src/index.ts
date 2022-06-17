@@ -115,8 +115,12 @@ function attachModal(userEl: HTMLElement, userId: number) {
 /*
   I really found my TypeScript skills lacking when it came down to trying
   to work quickly and effectively. A lot of this code is just avoiding typescript
-  errors while trying to muddle through with regular JS. Definitely something I want to
-  improve upon. Initial submission did not have any comments.  
+  errors while trying to muddle through with regular JS. 
+  I think this is just me not practicing enough TypeScript outside of the Udemy course
+  I have been following. I had a tough time setting up module scripts quickly so I abandoned that.
+  I also had a tough time dealing with the linter I set up and defining a fetch Promise properly, so I scrapped that too.
+  Definitely something I want to improve upon. 
+  Initial submission did not have any comments.  
 
   TODO:
   I also am mixing async and await with promises and I need to convert those to all async await.
