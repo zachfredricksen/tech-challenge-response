@@ -25,9 +25,8 @@ async function fetchTodos() {
   and attach to the modal elements. todoModalData iterates through all todos and organizes
   each todo into an object with a key value that is the userId the todo corresponds to.
   Once that is finished, we create our modal divs, attach relevant classes, create
-  the todoList unordered list element, put each todo "title" string into the text node
-  of a list element. Although we have nested for loops, each string needed is only accessed once.
-  In this case, 200 elements divided into 10 buckets of 20 elements before being iterated over.
+  the todoList unordered list element, and put each todo "title" string into the text node
+  of a list element.
 */
 async function createTodoModals(): Promise<void> {
   const todos = await fetchTodos();
@@ -124,6 +123,7 @@ function attachModal(userEl: HTMLElement, userId: number) {
 
   TODO:
   I also am mixing async and await with promises and I need to convert those to all async await.
+  Separate functions out more. You can at least make todoModalData a function call to get the data.
 
   This is the execution code that runs once called on index.html.
 */
